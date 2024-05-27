@@ -30,13 +30,13 @@ driver.get('https://accounts.google.com/ServiceLogin/identifier?continue=https%3
 driver.implicitly_wait(100)
 
 loginBox = driver.find_element_by_xpath('//*[@id ="identifierId"]')
-loginBox.send_keys("edamakantiramanjireddy@bitsathy.ac.in")
+loginBox.send_keys("Email")
 
 nextButton = driver.find_element_by_xpath('//*[@id ="identifierNext"]')
 nextButton.click()
 
 passWordBox = driver.find_element_by_xpath('//*[@id ="password"]/div[1]/div / div[1]/input')
-passWordBox.send_keys("Ramanji.1234")
+passWordBox.send_keys("Password")
 
 nextButton = driver.find_element_by_xpath('//*[@id ="passwordNext"]')
 nextButton.click()
